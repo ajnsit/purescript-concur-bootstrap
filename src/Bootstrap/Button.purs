@@ -1,4 +1,4 @@
-module Bootstrap where
+module Bootstrap.Button where
 
 import Concur.React (el, el')
 import Concur.React.DOM (El, El1, El')
