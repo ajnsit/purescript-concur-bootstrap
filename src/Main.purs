@@ -41,9 +41,11 @@ renderPage Alert = D.div []
   ]
 
 mainWidget :: forall a. Widget HTML a
-mainWidget =
-  let go page = renderPage page >>= go
-  in go Home
+mainWidget = D.div'
+  [ D.h1 [] [D.text "Concur Bootstrap Example"]
+  , let go page = renderPage page >>= go
+    in go Home
+  ]
 
 main :: Effect Unit
 main = runWidgetInDom "root" mainWidget
