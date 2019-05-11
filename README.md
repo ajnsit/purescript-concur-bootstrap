@@ -2,6 +2,10 @@
 
 Bootstrap components for Purescript-Concur (React backend)
 
+## Demo
+
+[Live Demo](https://ajnsit.github.io/purescript-concur-bootstrap/) | [Source](https://raw.githubusercontent.com/ajnsit/purescript-concur-bootstrap/master/src/Main.purs)
+
 ## Usage
 
 ### Option 1. Use spago to install (TODO)
