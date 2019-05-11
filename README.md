@@ -4,7 +4,7 @@ Bootstrap components for Purescript-Concur (React backend)
 
 ## Demo
 
-[Live Demo](https://ajnsit.github.io/purescript-concur-bootstrap/) | [Source](https://raw.githubusercontent.com/ajnsit/purescript-concur-bootstrap/master/src/Main.purs)
+[Live Demo](https://ajnsit.github.io/purescript-concur-bootstrap/) | [Source](https://github.com/ajnsit/purescript-concur-bootstrap/blob/master/src/Main.purs)
 
 ## Usage
 
