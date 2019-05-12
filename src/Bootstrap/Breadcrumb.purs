@@ -1,5 +1,6 @@
 module Bootstrap.Breadcrumb where
 
+import Bootstrap.Common (active)
 import Bootstrap.FFI (_breadcrumb, _breadcrumbItem)
 import Concur.Core.Types (Widget)
 import Concur.React (HTML, el, el')
@@ -42,22 +43,6 @@ breadcrumbItem = el' _breadcrumbItemNode
 -- | See `breadcrumbItem`
 breadcrumbItem' :: El'
 breadcrumbItem' = breadcrumbItem []
-
--- | Adds a visual "active" state to a Breadcrumb Item and disables the link.
-active :: forall a. P.Props a
-active = P.unsafeMkProp "active" "true"
-
--- | href attribute for the inner a element
-href :: forall a. String -> P.Props a
-href = P.unsafeMkProp "href"
-
--- | target attribute for the inner a element
-target :: forall a. String -> P.Props a
-target = P.unsafeMkProp "target"
-
--- | title attribute for the inner a element
-title :: forall a. String -> P.Props a
-title = P.unsafeMkProp "title"
 
 -- | A Higher Level Component for Breadcrumbs
 crumbs :: forall m a. ShiftMap (Widget HTML) m => MultiAlternative m  => Eq a => Array (P.Props a) -> (a -> Array (m a)) -> Array a -> a -> m a
